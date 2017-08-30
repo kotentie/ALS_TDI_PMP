@@ -6,7 +6,6 @@ import { RecordPage } from '../record/record';
 import { ListenPage } from '../listen/listen';
 import { LoginPage } from '../login/login';
 
-
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -17,9 +16,7 @@ export class TabsPage {
   tab3Root = ListenPage;
 
   constructor(public navCtrl: NavController) {
-
   	this.navCtrl.push(LoginPage);
-
   }
 
 

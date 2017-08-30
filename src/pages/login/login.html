@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-
+  <div class="login-container">
     <ion-row>
       <ion-col>
         <ion-list>
@@ -34,9 +34,47 @@
     </ion-row>
  
     <ion-row>
-      <ion-col text-right>
+      <ion-col text-right col-8>
         <button ion-button class="login-button" (click)="login()">Login</button>
       </ion-col>
+      <ion-col text-right col-4>
+        <button ion-button clear class='signup-button' (click)="showSignUp()">Sign up</button>
+      </ion-col>
     </ion-row>
-
+  </div>
+  <div class="signup-container" style="display: none">
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label>Name</ion-label>
+            <ion-input type="name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item> 
+          <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+ 
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+ 
+        </ion-list>
+      </ion-col>
+    </ion-row>
+ 
+    <ion-row>
+      <ion-col text-right col-8>
+        <button ion-button class='signup-button' (click)="login()">Sign up</button>
+      </ion-col>
+            <ion-col text-right col-4>
+        <button ion-button clear class="login-button" (click)="showLogin()">Login</button>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

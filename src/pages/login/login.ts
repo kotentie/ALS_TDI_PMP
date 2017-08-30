@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import $ from "jquery";
 
 /**
  * Generated class for the LoginPage page.
@@ -19,8 +20,15 @@ export class LoginPage {
   }
 
   login(){
-  this.NavController.pop();
-
+ 	this.NavController.pop();
+  }
+  showSignUp(){
+  		$('.login-container').hide();
+  		$('.signup-container').show();
+  }
+  showLogin(){
+    	$('.signup-container').hide();
+  		$('.login-container').show();
   }
 
   ionViewDidLoad() {
