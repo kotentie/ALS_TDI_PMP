@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MediaPlugin } from 'ionic-native';
 
 /**
  * Generated class for the RecordPage page.
